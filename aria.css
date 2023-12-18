@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(162, 168, 243);
+}
+
+#menuContent[aria-hidden="true"] {
+  display: none;
+}
+
+#menuButton {
+  position: fixed;
+  right: 30px;
+}
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  right: 30px;
+  top: 80px;
+  border: 1px solid black;
+}
+
+li {
+  padding: 10px;
+  /* border: solid 1px black; */
+  background-color: black;
+  opacity: 0.7;
+  width: 200px;
+}
+
+li:hover {
+  background-color: rgb(247, 200, 245);
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: black;
+}
+
+#wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: rgb(136, 178, 204);
+}
+
+button {
+  height: 30px;
+  width: 60px;
+}
+
+#accessibleModal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgb(34, 172, 223);
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding: 2.5rem;
+  position: fixed;
+  top: 70px;
+  left: 30px;
+  right: 30px;
+  border-color: red;
+}
+
+::backdrop {
+  background-color: black;
+  opacity: 0.8;
+}
+
+p {
+  line-height: 1.5rem;
+}
